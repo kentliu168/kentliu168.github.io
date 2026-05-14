@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>饕客的終極聖經？揭開「米其林餐廳」的星級祕密</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        michelin: {
+                            red: '#E21F26',
+                            darkRed: '#A3161A',
+                            gold: '#C5A059',
+                            cream: '#FDFBF7',
+                            dark: '#1A1A1A'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                        accent: ['Zhi Mang Xing', 'cursive']
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #1A1A1A;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .michelin-gradient {
+            background: linear-gradient(135deg, #E21F26 0%, #A3161A 100%);
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+        ::selection {
+            background-color: #E21F26;
+            color: white;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Header / Hero Section -->
+    <header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <img src='https://opal.google/board/blobs/9dcf7f4d-0a59-45a8-829a-cea0e48a6547' alt='Michelin Banner' class="w-full h-full object-cover scale-105 animate-float" />
+        </div>
+        
+        <div class="relative z-20 container mx-auto px-6 text-center text-white">
+            <div class="inline-block px-4 py-1 mb-6 border border-white/30 glass-card rounded-full text-sm font-semibold tracking-widest uppercase animate-fade-in-up">
+                Gastronomy Insight
+            </div>
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-8 text-balance leading-tight animate-fade-in-up" style="animation-delay: 0.2s;">
+                饕客的終極聖經？<br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">揭開「米其林」的星級祕密</span>
+            </h1>
+            <p class="text-lg md:text-2xl font-light max-w-3xl mx-auto mb-10 opacity-90 animate-fade-in-up" style="animation-delay: 0.4s;">
+                從輪胎贈品到美食界的奧斯卡：一場跨越百年的味蕾社會學探究。
+            </p>
+            <div class="flex items-center justify-center gap-4 animate-fade-in-up" style="animation-delay: 0.6s;">
+                <div class="h-[1px] w-12 bg-white/50"></div>
+                <span class="font-accent text-3xl">M11416111</span>
+                <div class="h-[1px] w-12 bg-white/50"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 -mt-20 relative z-30 pb-24">
+        
+        <!-- Intro Section -->
+        <section class="glass-card rounded-[2rem] p-8 md:p-16 shadow-2xl mb-16">
+            <div class="max-w-3xl mx-auto">
+                <div class="flex items-center gap-2 mb-8 justify-center md:justify-start">
+                    <span class="text-michelin-red text-4xl">🛑</span>
+                    <h2 class="text-3xl font-display font-bold">前言：不只是星級，是美食的神級殿堂</h2>
+                </div>
+                <div class="prose prose-lg prose-slate max-w-none leading-relaxed text-gray-700 font-light">
+                    <p class="mb-6">
+                        在這個人人自稱「吃貨」的時代，我們對於「米其林」這個詞早已耳熟能詳。但你是否曾停下腳步思考過：為什麼一個賣輪胎的品牌，最後竟成了定義全球美食最高殿堂的權威？
+                    </p>
+                    <p class="mb-8">
+                        我是 <span class="font-bold text-michelin-red">M11416111</span>，今天想以一個知識份子的視角，帶大家撥開那層神祕的法式薄紗，看看這場跨越百年的美食盛宴背後，究竟隱藏著什麼樣的社會邏輯與文化趣味。
+                    </p>
+                </div>
+
+                <!-- Star Rating Bento -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-michelin-red hover:shadow-lg transition-all transform hover:-translate-y-1">
+                        <div class="text-michelin-red text-2xl mb-4">★</div>
+                        <h3 class="font-bold text-xl mb-2">一星</h3>
+                        <p class="text-sm text-gray-600">高品質料理，值得停車一嚐！就像在熙攘街頭偶然發現的隱藏佳餚。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-michelin-red hover:shadow-lg transition-all transform hover:-translate-y-1">
+                        <div class="text-michelin-red text-2xl mb-4">★★</div>
+                        <h3 class="font-bold text-xl mb-2">二星</h3>
+                        <p class="text-sm text-gray-600">廚藝卓越，值得繞道前往。代表料理已有鮮明的個性和遠見。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-michelin-red hover:shadow-lg transition-all transform hover:-translate-y-1">
+                        <div class="text-michelin-red text-2xl mb-4">★★★</div>
+                        <h3 class="font-bold text-xl mb-2">三星</h3>
+                        <p class="text-sm text-gray-600">卓越的烹飪，值得「專程」造訪！這輩子不吃一次，靈魂會少一塊拼圖。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section (Split Layout) -->
+        <section class="mb-16">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="w-full md:w-1/2">
+                    <div class="michelin-gradient p-12 rounded-[3rem] text-white shadow-xl relative overflow-hidden group">
+                        <div class="absolute -right-10 -bottom-10 opacity-10 group-hover:rotate-12 transition-transform duration-700">
+                             <svg width="300" height="300" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z"/></svg>
+                        </div>
+                        <span class="text-sm font-bold tracking-widest opacity-80 uppercase mb-4 block">1900-1931 Legacy</span>
+                        <h2 class="text-4xl font-display font-bold mb-6">🚗 歷史轉身：這一切竟然是為了多賣幾條輪胎？</h2>
+                        <p class="text-lg leading-relaxed opacity-90">
+                            回到 1900 年的法國，當時全法國只有約 3,000 輛汽車。米其林兄弟想出了一個天才妙計：鼓勵大家多開車出門！隨胎附贈手冊的潛台詞是：「去看遠方的風景吧（然後順便磨損你的輪胎）！」
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 space-y-6">
+                    <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                        <p class="text-gray-700 leading-relaxed italic">
+                            「有趣的是，這份指南後來之所以轉為收費，是因為創辦人安德烈看見指南被拿來墊桌腳，他意識到：人類通常只會尊重他們付錢買的東西。」
+                        </p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="bg-michelin-gold/10 p-6 rounded-2xl flex-1 border border-michelin-gold/20">
+                            <h4 class="font-bold text-michelin-gold mb-2">1926</h4>
+                            <p class="text-sm text-gray-600">正式引入星號評分</p>
+                        </div>
+                        <div class="bg-michelin-gold/10 p-6 rounded-2xl flex-1 border border-michelin-gold/20">
+                            <h4 class="font-bold text-michelin-gold mb-2">1931</h4>
+                            <p class="text-sm text-gray-600">確立三星制度</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights Section (Full Width Accent) -->
+        <section class="bg-michelin-dark text-white rounded-[3rem] p-12 md:p-20 mb-16 relative overflow-hidden">
+            <div class="max-w-4xl mx-auto relative z-10">
+                <h2 class="text-4xl font-display font-bold mb-8 text-center">🌟 觀點大聲公：為什麼大家對這顆星星這麼瘋？</h2>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="space-y-4">
+                        <div class="w-12 h-1 bg-michelin-red"></div>
+                        <h4 class="text-xl font-bold">消除資訊不對稱</h4>
+                        <p class="text-gray-400">對消費者而言，它消除了「資訊不對稱」的集體焦慮——不知道出國要吃什麼？看指南準沒錯。</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="w-12 h-1 bg-michelin-gold"></div>
+                        <h4 class="text-xl font-bold">城市品牌形象</h4>
+                        <p class="text-gray-400">各國政府將其視為「城市的面子工程」，提升高端觀光潛力，這也解釋了為何各國願意斥資推廣。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative circle -->
+            <div class="absolute -top-24 -left-24 w-64 h-64 bg-michelin-red opacity-10 rounded-full blur-3xl"></div>
+        </section>
+
+        <!-- Controversy Section (Bento Grid Style) -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-10">
+                <h2 class="text-3xl font-display font-bold">🌶️ 辛辣討論：光環背後的「暗黑真相」</h2>
+                <div class="flex-grow h-[1px] bg-gray-200"></div>
+            </div>
+            <div class="bento-grid">
+                <div class="col-span-2 bg-white p-8 rounded-[2rem] shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-bold mb-4 text-michelin-red">法式偏見的挑戰</h3>
+                    <p class="text-gray-600">米其林多年來一直被批評過於執著西餐的服務標準與邏輯，對於多元飲食文化的包容度曾受質疑。</p>
+                </div>
+                <div class="col-span-2 bg-gray-50 p-8 rounded-[2rem] shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-bold mb-4">生存壓力的窒息感</h3>
+                    <p class="text-gray-600">維持星級需要極高營運成本。摘星容易守星難，甚至有主廚因擔心掉星而走向極端。</p>
+                </div>
+                <div class="col-span-4 bg-white p-8 rounded-[2rem] shadow-sm border border-gray-100 flex flex-col md:flex-row gap-8 items-center">
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-bold mb-4">「摘星公式」與同質化</h3>
+                        <p class="text-gray-600">部分餐廳為了星星而發展出特定風格，導致料理精緻卻缺乏靈魂。我們追求的是食物的感動，還是那顆星星的印記？</p>
+                    </div>
+                    <div class="md:w-1/3 text-center">
+                        <span class="text-6xl font-accent text-gray-200">Reflect</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Section -->
+        <section class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-green-50 p-10 rounded-[2.5rem] border border-green-100">
+                <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white mb-6">🌱</div>
+                <h3 class="text-2xl font-bold text-green-800 mb-4">2020 綠星崛起</h3>
+                <p class="text-green-900/70">代表了對永續經營與環保實踐的關注。指南正嘗試走入凡間，擁抱路邊攤與在地美食，展現親民感。</p>
+            </div>
+            <div class="bg-blue-50 p-10 rounded-[2.5rem] border border-blue-100">
+                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white mb-6">📱</div>
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">數位革命轉身</h3>
+                <p class="text-blue-900/70">厚重的紅皮書正被靈活的 App 取代，即時預約與數位互動成了新寵。料理本質重新成為核心。</p>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="text-center py-20 px-8 rounded-[3rem] bg-cream border-2 border-dashed border-michelin-gold/30">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-4xl font-display font-bold mb-8">🥘 結語：吃的是星星，還是故事？</h2>
+                <p class="text-xl text-gray-700 leading-relaxed mb-10">
+                    對我 <span class="font-bold border-b-2 border-michelin-red text-michelin-red">M11416111</span> 來說，去米其林餐廳用餐不應只是一場儀式的履行，更是一場關於主廚靈魂與歷史傳承的對話。
+                </p>
+                <div class="bg-white p-8 rounded-2xl shadow-xl space-y-6">
+                    <p class="font-semibold text-gray-800 italic">讀者互動時間</p>
+                    <p class="text-gray-600">留言跟我分享，你心中最想造訪或是最令你驚豔的那顆「星」是哪家餐廳？在精緻與在地之間，你更傾心哪一種靈魂？</p>
+                    <div class="pt-4">
+                        <button class="michelin-gradient text-white px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-lg shadow-michelin-red/20">
+                            分享你的美食故事
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Simple decorative floating elements -->
+    <div class="fixed top-20 right-10 w-32 h-32 bg-michelin-red/5 rounded-full blur-2xl -z-10"></div>
+    <div class="fixed bottom-20 left-10 w-48 h-48 bg-michelin-gold/5 rounded-full blur-3xl -z-10"></div>
+
+    <script>
+        // Smooth reveal on scroll logic (optional enhancement)
+        const observerOptions = {
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        // This could be applied to more elements for a "reveal" effect if desired
+    </script>
+</body>
+</html>
+
